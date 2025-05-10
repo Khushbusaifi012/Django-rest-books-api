@@ -29,18 +29,31 @@ The API includes endpoints to:
 
 Follow the steps below to set up this project locally.
 1.pip install django djangorestframework
+
 2.python -m django createproject project
+
 3.cd project
+
 4.python manage.py createapp api
+
 5.Create a model in models.py according to your need.
+
 6.Create a file in api.py named at serializers.py(to convert data into json form)
+
 7.Then write down code in views.py according to your requirements.
+
 8.Create a new file called urls.py inside the api app folder and define the endpoints.
+
 9.Include the api URLs in the Project's urls.py
+
 10.Apply the migrations to create the database schema for the Book model:
+
 i)python manage.py makemigrations
+
 ii)python manage.py migrate
+
 11.Run the Development Server(python manage.py runserver)
+
 12.http://127.0.0.1:8000/api/books/
 Body json format
 {
@@ -48,6 +61,7 @@ Body json format
   "author": "Author Name",
   "published_date": "date"
 }
+
 13.Retrun json data:
 [
     {
@@ -58,7 +72,9 @@ Body json format
     }
 
   ]
+  
 14.And if you want to add this data into admin panel then u create a superuser on this command:
 (python manage.py createsuperuser)
+
 15. Access the Admin Panel (http://127.0.0.1:8000/admin/) Same data show into on this.
   
