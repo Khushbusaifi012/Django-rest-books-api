@@ -21,7 +21,7 @@ The API includes endpoints to:
 ## Technologies Used
 
 - **Django**: A high-level Python web framework.
-- **Django REST Framework**: A powerful toolkit for building Web APIs.
+- **Django REST Framework**: A powerful toolkit and Endpoint for building Web APIs.
 - **SQLite**: Default lightweight database (can be switched to PostgreSQL, MySQL, etc.).
 - **Python**: Programming language for the backend.
 
