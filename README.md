@@ -48,9 +48,9 @@ Follow the steps below to set up this project locally.
 
 10.Apply the migrations to create the database schema for the Book model:
 
-i)python manage.py makemigrations
+i) python manage.py makemigrations
 
-ii)python manage.py migrate
+ii) python manage.py migrate
 
 11.Run the Development Server(python manage.py runserver)
 
