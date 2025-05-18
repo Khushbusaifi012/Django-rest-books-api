@@ -6,11 +6,11 @@
 The **Book API** is a simple application built using **Django** and **Django REST Framework** to manage a collection of books. This API allows you to perform CRUD (Create, Read, Update, Delete) operations for books in a database.
 
 The API includes endpoints to:
-- Retrieve a list of all books
-- Add a new book
-- Get details of a single book
-- Update book details
-- Delete a book
+- Retrieve a list of all books.
+- Add a new book.
+- Get details of a single book.
+- Update book details.
+- Delete a book.
 
 ## Features
 
