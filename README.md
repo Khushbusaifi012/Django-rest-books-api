@@ -77,4 +77,5 @@ Body json format
 (python manage.py createsuperuser)
 
 15. Access the Admin Panel (http://127.0.0.1:8000/admin/) Same data show into on this.
+16. Also I have make a html page to add a data through on this page.
   
