@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+    <title>Add Book</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Add a New Book</h2>
+        <form id="bookForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="published_date">Published Date:</label>
+            <input type="date" id="published_date" name="published_date" required>
+
+            <button type="submit">Add Book</button>
+        </form>
+
+        <div id="response"></div>
+    </div>
+
+    <script>
+        document.getElementById('bookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const data = {
+                title: document.getElementById('title').value,
+                author: document.getElementById('author').value,
+                published_date: document.getElementById('published_date').value
+            };
+
+            fetch('/api/books/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                return response.json().then(err => {
+                    throw new Error(JSON.stringify(err));
+                });
+            })
+            .then(data => {
+                document.getElementById('response').innerHTML = '<span class="success">✅ Book added successfully!</span>';
+                document.getElementById('bookForm').reset();
+            })
+            .catch(error => {
+                document.getElementById('response').innerHTML = '<span class="error">❌ Error: ' + error.message + '</span>';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -43,4 +43,5 @@ class Bookdetail(APIView):
         book.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
     
-    
+def book_list(request):
+    return render(request, 'book_list.html')
