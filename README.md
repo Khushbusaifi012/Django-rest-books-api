@@ -29,7 +29,8 @@ The API includes endpoints to:
 
 Follow the steps below to set up this project locally:-
 
-1.#clone the repo-git clone
+#clone the repo:-
+1.git clone https://github.com/Khushbusaifi012/Django-rest-books-api.git
 
 2.pip install django djangorestframework
 
