@@ -56,7 +56,8 @@ ii) python manage.py migrate
 11.Run the Development Server(python manage.py runserver)
 
 12.http://127.0.0.1:8000/api/books/
-Body json format
+
+(For Example) Body json format
 {
   "title": "New Book Title",
   "author": "Author Name",
