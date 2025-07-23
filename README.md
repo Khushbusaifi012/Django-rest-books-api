@@ -29,33 +29,35 @@ The API includes endpoints to:
 
 Follow the steps below to set up this project locally:-
 
-1.pip install django djangorestframework
+1.#clone the repo-git clone
 
-2.python -m django createproject project  (for make a project)
+2.pip install django djangorestframework
 
-3.cd project
+3.python -m django createproject project  (for make a project)
 
-4.python manage.py createapp api   (for make a app)
+4.cd project
 
-5.Create a model in models.py according to your need.
+5.python manage.py createapp api   (for make a app)
 
-6.Create a file in api.py named at serializers.py(to convert data into json form)
+6.Create a model in models.py according to your need.
 
-7.Then write down code in views.py according to your requirements.
+7.Create a file in api.py named at serializers.py(to convert data into json form)
 
-8.Create a new file called urls.py inside the api app folder and define the endpoints.
+8.Then write down code in views.py according to your requirements.
 
-9.Include the api URLs in the Project's urls.py
+9.Create a new file called urls.py inside the api app folder and define the endpoints.
 
-10.Apply the migrations to create the database schema for the Book model:
+10.Include the api URLs in the Project's urls.py
+
+11.Apply the migrations to create the database schema for the Book model:
 
 i) python manage.py makemigrations
 
 ii) python manage.py migrate
 
-11.Run the Development Server(python manage.py runserver)
+12.Run the Development Server(python manage.py runserver)
 
-12.http://127.0.0.1:8000/api/books/
+13.http://127.0.0.1:8000/api/books/
 
 (For Example) Body json format:
 {
@@ -64,7 +66,7 @@ ii) python manage.py migrate
   "published_date": "date"
 }
 
-13.Retrun json data:
+14.Retrun json data:
 [
     {
         "id": 1,
@@ -75,9 +77,9 @@ ii) python manage.py migrate
 
   ]
   
-14.And if you want to add this data into admin panel then u create a superuser on this command:
+15.And if you want to add this data into admin panel then u create a superuser on this command:
 (python manage.py createsuperuser)
 
-15. Access the Admin Panel (http://127.0.0.1:8000/admin/) Same data show into on this.
-16. Also I have make a html page to add a data through on this page.
+16. Access the Admin Panel (http://127.0.0.1:8000/admin/) Same data show into on this.
+17. Also I have make a html page to add a data through on this page.
   
