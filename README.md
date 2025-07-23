@@ -27,14 +27,15 @@ The API includes endpoints to:
 
 ## Installation
 
-Follow the steps below to set up this project locally.
+Follow the steps below to set up this project locally:-
+
 1.pip install django djangorestframework
 
-2.python -m django createproject project
+2.python -m django createproject project  (for make a project)
 
 3.cd project
 
-4.python manage.py createapp api
+4.python manage.py createapp api   (for make a app)
 
 5.Create a model in models.py according to your need.
 
