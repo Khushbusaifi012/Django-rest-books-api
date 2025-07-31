@@ -1,7 +1,7 @@
 "# Django-rest-books-api" 
 # Book API - Django REST Framework
 
-## Overview
+## Overview:-
 
 The **Book API** is a simple application built using **Django** and **Django REST Framework** to manage a collection of books. This API allows you to perform CRUD (Create, Read, Update, Delete) operations for books in a database.
 
@@ -12,20 +12,20 @@ The API includes endpoints to:
 - Update book details.
 - Delete a book.
 
-## Features
+## Features:-
 
 - Full CRUD functionality for books.
 - Easy to integrate with front-end applications or other systems.
 - Built using **Django** for backend logic and **Django REST Framework** for creating the API endpoints.
 
-## Technologies Used
+## Technologies Used:-
 
 - **Django**: A high-level Python web framework.
 - **Django REST Framework**: A powerful toolkit and Endpoint for building Web APIs.
 - **SQLite**: Default lightweight database (can be switched to PostgreSQL, MySQL, etc.).
 - **Python**: Programming language for the backend.
 
-## Installation
+## Installation:-
 
 Follow the steps below to set up this project locally:-
 
